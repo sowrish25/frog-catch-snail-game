@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog catches Snail - Dijkstra Maze</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🐸 Snail Catcher 🐌</h1>
+            <p>Use Arrow Keys or WASD to move the frog and catch the snail!</p>
+        </header>
+        <main>
+            <div class="controls glass-panel">
+                <div class="difficulty-selector">
+                    <label>Difficulty:</label>
+                    <button class="diff-btn active" data-size="10">Easy</button>
+                    <button class="diff-btn" data-size="20">Medium</button>
+                    <button class="diff-btn" data-size="30">Hard</button>
+                </div>
+                <div class="action-buttons">
+                    <button id="generateBtn" class="primary-btn">Generate New Maze</button>
+                </div>
+            </div>
+            <div class="canvas-container glass-panel">
+                <canvas id="mazeCanvas"></canvas>
+            </div>
+            <div id="statusText" class="status-message">Generate a maze to begin!</div>
+        </main>
+    </div>
+    <script src="script.js"></script>
